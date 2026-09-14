@@ -1,3 +1,4 @@
+
 const wall = document.getElementById('wall');
 const addNoteBtn = document.getElementById('addNoteBtn');
 
