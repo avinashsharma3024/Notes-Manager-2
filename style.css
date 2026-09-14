@@ -1,0 +1,109 @@
+#mainTitle {
+  font-family: monospace;
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 32px;
+  font-weight: bold;
+  background: #ffeb3b; 
+  padding: 10px 25px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  border: 1px solid #e0c200;
+  border-radius: 6px;
+  z-index: 20;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff8b3;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #fff8b3 0px,
+    #fff8b3 19px,
+    #d0d0d0 20px
+  );
+}
+
+#addNoteBtn {
+  font-family: monospace;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  padding: 10px 15px;
+  background: #ffeb3b;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+#wall {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.note {
+  position: absolute;
+  width: 200px;        
+  min-height: 160px;     
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  user-select: none;
+  overflow: hidden;
+}
+
+.note-header {
+  font-family: monospace;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 8px;
+  background: rgba(0,0,0,0.08);
+}
+
+
+.drag-handle {
+  width: 18px;
+  flex: 0 0 18px;
+  text-align: center;
+  cursor: move;
+  font-weight: bold;
+  user-select: none;
+  opacity: 0.7;
+}
+
+
+.note-title {
+  flex: 1;
+  font-weight: 700;
+  outline: none;
+  cursor: text;
+  min-height: 18px;
+}
+
+
+.deleteBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+  padding: 0;
+  user-select: none;
+}
+
+.note-content {
+  padding: 8px;
+  outline: none;
+  cursor: text;
+  user-select: text;
+  min-height: 110px;
+  background: transparent;
+}
